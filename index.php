@@ -32,7 +32,7 @@ if(!isset($_SESSION))
 </head>
 
 <body id="page-top" class="index">
-<?php if(isset($_SESSION['name'])) { ?>
+  <?php if(isset($_SESSION['name'])) { ?>
   <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -283,7 +283,7 @@ if(!isset($_SESSION))
               }
               echo "</table>";
             }
-
+            
             ?>
           </div>
         </div>
@@ -374,6 +374,7 @@ if(!isset($_SESSION))
 <script src="js/freelancer.js"></script>
 <?php }else{
   echo("<script>location.href = '"."login.php';</script>");
+  
 }
 
 ?>
@@ -381,6 +382,8 @@ if(!isset($_SESSION))
 
 
 </html>
+
+
 <?php 
 
 
